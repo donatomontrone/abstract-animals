@@ -11,11 +11,11 @@ public class Main {
 	public static void main(String[] args) {
 		Dog dg = new Dog();
 		
-		System.out.println("Il cane fa questo verso:");
+		System.out.print("Il cane fa questo verso:");
 		
 		dg.call();
 		
-		System.out.println("Il cane mangia: ");
+		System.out.print("Il cane mangia: ");
 		
 		dg.eat();
 		
@@ -27,11 +27,11 @@ public class Main {
 				
 		Eagle e = new Eagle();
 		
-		System.out.println("L'aquila fa questo verso:");
+		System.out.print("L'aquila fa questo verso:");
 		
 		e.call();
 		
-		System.out.println("L'aquila mangia: ");
+		System.out.print("L'aquila mangia: ");
 		
 		e.eat();
 		
@@ -43,11 +43,11 @@ public class Main {
 				
 		Dolphin df = new Dolphin();
 		
-		System.out.println("Il delfino fa questo verso:");
+		System.out.print("Il delfino fa questo verso:");
 		
 		df.call();
 		
-		System.out.println("Il delfino mangia: ");
+		System.out.print("Il delfino mangia: ");
 		
 		df.eat();
 		
@@ -59,11 +59,11 @@ public class Main {
 				
 		Sparrow s = new Sparrow();
 		
-		System.out.println("Il passerotto fa questo verso:");
+		System.out.print("Il passerotto fa questo verso:");
 		
 		s.call();
 		
-		System.out.println("Il passerotto mangia: ");
+		System.out.print("Il passerotto mangia: ");
 		
 		s.eat();
 		
@@ -80,11 +80,14 @@ public class Main {
 			
 			Animal animal = animals[i];
 			
+			System.out.println(animal.getClass().getSimpleName() + ": ");
+			animal.sleep();
+			animal.eat();
 			animal.call();
+			System.out.println("\n-------------------------\n");
 			
 		}
 		
-		System.out.println("\n-------------------------\n");
 		
 		System.out.println("\nParte 2\n");
 		
