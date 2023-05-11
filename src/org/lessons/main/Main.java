@@ -84,6 +84,20 @@ public class Main {
 			
 		}
 		
+		System.out.println("\n-------------------------\n");
+		
+		System.out.println("\nParte 2\n");
+		
+		
+		AnimalManager am = new AnimalManager();
+		
+		am.makeSwim(df);
+		System.out.println("\n-------------------------\n");
+		am.makeSwim(dg);
+		System.out.println("\n-------------------------\n");
+		am.makeFly(s);
+		System.out.println("\n-------------------------\n");
+		am.makeFly(e);
 		
 	}
 }

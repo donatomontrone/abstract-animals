@@ -1,6 +1,8 @@
 package org.lessons.animals;
 
-public class Dolphin extends Animal{
+import org.lessons.actions.Swimming;
+
+public class Dolphin extends Animal implements Swimming{
 	@Override
 	public void call() {
 		System.out.println("ANDSNINCVIEVIEVMN");
@@ -10,6 +12,12 @@ public class Dolphin extends Animal{
 	@Override
 	public void eat() {
 		System.out.println("piccoli pesci");
+		
+	}
+
+	@Override
+	public void swim() {
+		System.out.println("Sto nuotando!!!");
 		
 	}
 }

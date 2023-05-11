@@ -1,6 +1,8 @@
 package org.lessons.animals;
 
-public class Eagle extends Animal{
+import org.lessons.actions.Flying;
+
+public class Eagle extends Animal implements Flying{
 	
 	
 	@Override
@@ -14,4 +16,12 @@ public class Eagle extends Animal{
 		System.out.println("carne");
 		
 	}
+
+	@Override
+	public void fly() {
+		System.out.println("Sto volando!!!");
+		
+	}
+
+	
 }

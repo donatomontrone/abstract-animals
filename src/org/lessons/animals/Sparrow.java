@@ -1,6 +1,8 @@
 package org.lessons.animals;
 
-public class Sparrow extends Animal{
+import org.lessons.actions.Flying;
+
+public class Sparrow extends Animal implements Flying{
 	
 	@Override
 	public void call() {
@@ -13,5 +15,12 @@ public class Sparrow extends Animal{
 		System.out.println("cereali o semi");
 		
 	}
+	
+	@Override
+	public void fly() {
+		System.out.println("Sto volando!!!");
+		
+	}
+
 
 }
